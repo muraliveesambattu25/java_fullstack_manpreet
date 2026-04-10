@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 13px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #919191;
+    background-color: #232323;
+}
+
+div.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    overflow: auto;
+}
+
+.row1,
+.row1 a {
+    color: #C0BAB6;
+    background: #333333;
+}
+
+#header {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+#hgroup {
+    float: left;
+    margin: 0 0 20px 0;
+}
+
+#header #hgroup h1,
+#header #hgroup h2 {
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+}
+
+#header #hgroup h1 {
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header #hgroup h2 {
+    font-size: 13px;
+}
