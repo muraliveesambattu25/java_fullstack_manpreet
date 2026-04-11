@@ -9,7 +9,20 @@ body {
     color: #919191;
     background-color: #232323;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: normal;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
 div.wrapper {
     display: block;
     width: 100%;
@@ -25,7 +38,7 @@ div.wrapper {
     background: #333333;
 }
 
-#header {
+#header,#container {
     display: block;
     width: 960px;
     margin: 0 auto;
@@ -55,4 +68,76 @@ a {
 
 #header #hgroup h2 {
     font-size: 13px;
+}
+#header nav {
+    display: block;
+    float: right;
+    margin: 10px 0 0 0;
+    padding: 20px 0;
+    color: #C0BAB6;
+    background: #232323;
+}
+#header nav ul {
+    display: block;
+    list-style: none;
+    padding: 0 20px;
+}
+#header nav ul li{
+    display: inline;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+#header nav ul li.last{
+    margin: 0;
+}
+#header nav ul li a{
+    color: #C0BAB6;
+    background: #232323;
+}
+.row2{
+    color: #979797;
+    background: white;
+}
+#container{
+    padding: 30px 0;
+}
+#container section{
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0;
+    overflow:auto
+}
+.one_third{
+    width: 300px;
+}
+.one_third{
+    display: block;
+    float: left;
+    margin: 0 30px 0 0;
+}
+.last_box{
+    margin: 0;
+}
+#container #homepage #services article figure img{
+    display: block;
+    padding: 4px;
+    border: 1px solid #D6D6D6;
+    margin: 0 0 15px 0;
+}
+#container #homepage #services article figure h2{
+    font-size: 14px;
+    font-weight: bold;
+}
+#container #homepage{
+    display: block;
+    width: 100%;
+    line-height: 1.8em;
+}
+#container .more {
+    text-align: right;
+}
+.row2 a {
+    color: #FF9900;
+    background-color: #FFFFFF;
 }
