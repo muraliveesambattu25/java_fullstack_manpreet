@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 13px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #919191;
+    background-color: #232323;
+}
+
+div.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.row1,
+.row1 a {
+    color: #C0BAB6;
+    background-color: #333333;
+}
+
+#header,
+#container,
+#footer {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 20px 0;
+    overflow: auto;
+}
+
+#header #hgroup h1,
+#header #hgroup h2 {
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+}
+
+#header #hgroup h1 {
+    font-size: 36px;
+}
+#header #hgroup {
+    float: left;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+#header #hgroup h2 {
+    font-size: 13px;
+}
+
+#header form {
+    width: 290px;
+    float: right;
+    margin: 20px 0;
+}
+legend{
+    display: none;
+    
+}
+form , fieldset,legend{
+    border: none;
+}
+#header form input {
+    display: block;
+    float: left;
+    width: 200px;
+    margin: 0;
+    padding: 5px;
+    color: #C0BAB6;
+    background-color: #232323;
+    border: 1px solid #666666;
+}
+input, textarea, select {
+    font-size: 12px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+#header form #sf_submit {
+    display: block;
+    float: right;
+    width: 70px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #FF9900;
+    border: none;
+    cursor: pointer;
+}
