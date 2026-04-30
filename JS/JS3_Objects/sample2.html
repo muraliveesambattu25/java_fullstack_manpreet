@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var person = {
+            fname: "Murali", // Property 
+            lname: "Reddy"
+        };
+
+        var student = { fname: "ram", lname: "kumar" };
+
+        // Adding a property to and Object with . notation
+        person.email = "murali@gmail.com";
+
+        // Adding a property to an objedt with [] notation
+        person['city'] = "Bangalore";
+
+        // console.log(person);
+
+        class Stundet {
+
+        }
+
+        var student1 = new Stundet(); // Creating an Instance of the Class
+        student1.fname = "Murali";
+        student1["lname"] = "V";
+        console.log(student1);
+
+
+        var student2 = new Stundet();
+        student2.fname = "Ram"
+        student2.email = "ram@gmail.com";
+        console.log(student2);
+
+        // student1["lname"] = "VMR";
+        // student1.lname = "VVVM"
+        // delete student1.lname
+        // console.log(student1.lname);
+        // console.log(student1["fname"]);
+
+
+        var employee = {
+            fname: "Raghu",
+            lname: "ram",
+            fullName: function () {
+                return this.fname + " " + this.lname
+            },
+            address: {
+                city: "Bangalore",
+                state: "Karnataka",
+                country: "India"
+            }
+        }
+
+
+
+        console.log(employee.address);
+        // console.log(object);
+    </script>
+</body>
+
+</html>
