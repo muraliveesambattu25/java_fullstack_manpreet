@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var myNumbers = [10, 20, 40, 60, 80]
+
+        // var arrayOfNumbers = [{ num: 10 }, { num: 20 }, { num: 40 }, { num: 60 }, { num: 80 }];
+
+        // var result = arrayOfNumbers.reduce(function (a, b) {
+        //     if (typeof a == "number") {
+        //         return a * b.num
+        //     } else {
+        //         return a.num * b.num
+        //     }
+        // })
+
+        // var result = myNumbers.reduce(function (a, b) {
+        //     return a * b
+        // })
+
+        var studentMarks = [
+            { subject: "English", marks: 90 },
+            { subject: "Maths", marks: 95 },
+            { subject: "Science", marks: 85 },
+            { subject: "Social", marks: 90 },
+            { subject: "Computers", marks: 75 },
+        ]
+
+        // var total = studentMarks.reduce(function (a, b) {
+        //     if (typeof a != "number") {
+        //         return a.marks + b.marks
+        //     } else {
+        //         return a + b.marks
+        //     }
+
+        // })
+        // document.writeln("Total : ", total + "<br/>");
+        // document.writeln("Avg : ", total / studentMarks.length)
+
+        // Scenario 1: 
+        // Find How many Subjects Above 90+ 
+        // var subjects = studentMarks.find(function (obj) {
+        //     return obj.marks >= 90
+        // })
+
+        // var subjects = [];
+
+        // for (i = 0; i < studentMarks.length; i++) {
+        //     if (studentMarks[i].marks >= 90) {
+        //         subjects.push(studentMarks[i])
+        //     }
+        // }
+
+        // studentMarks.forEach((val) => {
+        //     // console.log(val);
+        //     if (val.marks >= 85) {
+        //         subjects.push(val)
+        //     }
+        // })
+
+        var subjects = studentMarks.map(function (obj) {
+            if (obj.marks >= 90) {
+                return obj
+            }
+        }).filter(function (val) {
+            return val != undefined
+        })
+        console.log(subjects);
+
+    </script>
+</body>
+
+</html>

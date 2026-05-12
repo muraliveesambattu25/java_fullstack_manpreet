@@ -17,11 +17,67 @@
 
         // console.log(check);
 
-        var check = products.some(function (val) {
-            return val.length == 7;
-        })
-        console.log(check);
+        // var check = products.some(function (val) {
+        //     return val.length == 7;
+        // })
+        // console.log(check);
 
+        // reduce 
+
+        var allNumbers = [10, 20, 40, "Murali", 60, 70, 90]
+
+        // var total = 0;
+
+        // for (i = 0; i < allNumbers.length; i++) {
+        //     total = total + allNumbers[i]
+        // }
+
+        var total = allNumbers.reduce(function (a, b) {
+            console.log(typeof a, typeof b);
+            if (typeof b != "string") {
+                return a + b
+            } else {
+                return a
+            }
+            // return a + b
+        })
+
+        // document.writeln("ToTal : ", total);
+
+        // Array of Objects
+
+        var employees = [
+            {
+                id: 1,
+                name: "Murali",
+                role: "Developer",
+                salary: 50000
+            },
+            {
+                id: 2,
+                name: "Ravi",
+                role: "Tester",
+                salary: 40000
+            },
+            {
+                id: 3,
+                name: "Anu",
+                role: "Designer",
+                salary: 45000
+            }
+        ];
+
+        var totalSalary = employees.reduce(function (a, b) {
+            if (typeof a !== "number") {
+                return a.salary + b.salary
+            } else {
+                return a + b.salary
+            }
+
+            // 
+        })
+
+        document.writeln(totalSalary);
     </script>
 </body>
 
