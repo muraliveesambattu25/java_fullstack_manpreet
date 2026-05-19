@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="showHeading()">Click Me</button>
+    <h2 onmouseover="changeColor()" onmouseout="resetColor()" onclick="changeContent()">Welcome to Event Handlers</h2>
+
+    <script>
+        function showHeading() {
+            document.querySelector("h2").style.display = "block";
+            // document.getElementById 
+            // document.getElementsByClassName
+            // document.getElementsByTagName
+            // document.getElementsByName
+            // document.querySelectorAll
+        }
+
+        function changeColor() {
+            document.querySelector("h2").style.color = "red"
+        }
+
+        function resetColor() {
+            document.querySelector("h2").style.color = ""
+        }
+
+        function changeContent() {
+            document.querySelector("h2").innerHTML = "You Just Changed Me with Javascript !!!"
+        }
+    </script>
+</body>
+
+</html>

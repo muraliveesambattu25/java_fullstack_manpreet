@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="changeColor()">Change</button>
+    <h2>Welcome to DOM Topic !!!</h2>
+    <h2>Welcome to DOM Topic !!!</h2>
+    <h2>Welcome to DOM Topic !!!</h2>
+    <script>
+        function changeColor() {
+            // document.querySelector("h2").style.color = "red";
+            var totalheadings = document.querySelectorAll("h2")
+            var totalheadingsLength = totalheadings.length;
+            var lastElementIndex = totalheadingsLength - 1;
+            totalheadings[lastElementIndex].style.color = "red"
+        }
+        // for (i = 0; i < 10; i++) {
+        //     var headingElement = document.createElement("h1");
+        //     headingElement.innerHTML = "Hello World !!!!";
+        //     document.body.appendChild(headingElement)
+        // }
+    </script>
+</body>
+
+</html>
+
+<!-- Document Object Model - DOM 
+ 1. Create HTML Elements 
+ 2. Read HTML Elements 
+ 3. Update HTML Elements 
+ 4. Delete HTML Elements 
+ 5. Add Event Handlers to html Elements 
+ 6. Add CSS properties to HTML Elements 
+
+-->
