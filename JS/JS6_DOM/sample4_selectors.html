@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li class="myItem">Item 2</li>
+        <li>Item 3</li>
+        <li class="myItem">Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <script>
+        var myItems = document.getElementsByClassName("myItem")
+        console.log(myItems);
+        // myItems.forEach(function (item){
+        //     console.log(item);
+        // })
+
+        for (i = 0; i < myItems.length; i++) {
+            myItems[i].style.color = "red"
+        }
+         // Accessing HTML Elements In DOM
+        // 1. querySelector - WIll select the first matching
+        // 2. querySelectorAll - will return the array of Elements
+        // 3. getElementsByTagName - will return the array of Elements 
+        // 4. getElementById
+        // 5. getElementsByClassName
+    </script>
+</body>
+
+</html>
