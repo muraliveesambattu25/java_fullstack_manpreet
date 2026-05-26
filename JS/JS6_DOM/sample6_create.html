@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Profession</th>
+                <th>Salary</th>
+                <th>Is Active</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        // for (i = 0; i < 10; i++) {
+        //     var para = document.createElement("p");
+        //     var node = document.createTextNode("This is Paragraph " + i);
+        //     para.appendChild(node);
+        //     // para.innerHTML = "Create an Element in DOM !!!"
+        //     document.body.appendChild(para);
+        // }
+
+        var users = [
+            {
+                id: 1,
+                name: "Arun Kumar",
+                age: 24,
+                city: "Bangalore",
+                profession: "Frontend Developer",
+                salary: 55000,
+                isActive: true
+            },
+            {
+                id: 2,
+                name: "Sneha Reddy",
+                age: 27,
+                city: "Hyderabad",
+                profession: "UI Designer",
+                salary: 62000,
+                isActive: true
+            },
+            {
+                id: 3,
+                name: "Rahul Sharma",
+                age: 30,
+                city: "Mumbai",
+                profession: "Backend Developer",
+                salary: 75000,
+                isActive: false
+            },
+            {
+                id: 4,
+                name: "Priya Nair",
+                age: 26,
+                city: "Chennai",
+                profession: "QA Engineer",
+                salary: 50000,
+                isActive: true
+            },
+            {
+                id: 5,
+                name: "Kiran Patel",
+                age: 29,
+                city: "Pune",
+                profession: "DevOps Engineer",
+                salary: 80000,
+                isActive: false
+            },
+            {
+                id: 6,
+                name: "Meena Joshi",
+                age: 23,
+                city: "Delhi",
+                profession: "Content Writer",
+                salary: 40000,
+                isActive: true
+            },
+            {
+                id: 7,
+                name: "Vikram Singh",
+                age: 32,
+                city: "Kolkata",
+                profession: "Project Manager",
+                salary: 95000,
+                isActive: true
+            },
+            {
+                id: 8,
+                name: "Anjali Verma",
+                age: 25,
+                city: "Ahmedabad",
+                profession: "Data Analyst",
+                salary: 68000,
+                isActive: false
+            },
+            {
+                id: 9,
+                name: "Rohit Das",
+                age: 28,
+                city: "Jaipur",
+                profession: "Mobile Developer",
+                salary: 72000,
+                isActive: true
+            },
+            {
+                id: 10,
+                name: "Divya Iyer",
+                age: 31,
+                city: "Coimbatore",
+                profession: "HR Manager",
+                salary: 60000,
+                isActive: true
+            }
+        ];
+
+        for (i = 0; i < users.length; i++) {
+            var myTr = document.createElement("tr");
+            // myTr.innerHTML = "<td>" + users[i].id + "</td>"
+            //     + "<td>" + users[i].name + "</td>"
+            //     + "<td>" + users[i].age + "</td>"
+            //     + "<td>" + users[i].city + "</td>"
+            //     + "<td>" + users[i].profession + "</td>"
+            //     + "<td>" + users[i].salary + "</td>"
+            //     + "<td>" + users[i].isActive + "</td>";
+
+            myTr.innerHTML = `
+            <td>${users[i].id}</td>
+            <td>${users[i].name}</td>
+            <td>${users[i].age}</td>
+            <td>${users[i].city}</td>
+            <td>${users[i].profession}</td>
+            <td>${users[i].salary}</td>
+            <td>${users[i].isActive}</td>
+            `
+
+            document.querySelector("tbody").appendChild(myTr)
+        }
+    </script>
+</body>
+
+</html>
