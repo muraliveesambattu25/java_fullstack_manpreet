@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #usersTable {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+
+
+        <table>
+            <tr>
+                <td> <label for="">ID</label></td>
+                <td> <input type="text" name="" id="id"></td>
+            </tr>
+            <tr>
+                <td> <label for="">Name</label></td>
+                <td> <input type="text" name="" id="name"></td>
+            </tr>
+            <tr>
+                <td> <label for="">Age</label></td>
+                <td> <input type="text" name="" id="age"> </td>
+            </tr>
+            <tr>
+                <td> <label for="">City</label></td>
+                <td> <input type="text" name="" id="city"> </td>
+            </tr>
+            <tr>
+                <td><label for="">Profession</label></td>
+                <td><input type="text" name="" id="profession"> </td>
+            </tr>
+            <tr>
+                <td> <label for="">Salary</label></td>
+                <td><input type="text" name="" id="salary"> </td>
+            </tr>
+            <tr>
+                <td><label for="">Is Active</label></td>
+                <td><input type="text" name="" id="isActive"> </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <button type="button" onclick="addUser()">Add User</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+
+    <table border="1" id="usersTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Profession</th>
+                <th>Salary</th>
+                <th>Is Active</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="myUsers"></tbody>
+    </table>
+    <script>
+
+    </script>
+    <script src="./users.js"></script>
+    <script src="./displayUsers.js"></script>
+    <script src="./create.js"></script>
+    <script src="./delete.js"></script>
+</body>
+
+</html>

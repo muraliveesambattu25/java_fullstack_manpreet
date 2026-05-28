@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #usersTable {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+
+
+        <table>
+            <tr>
+                <td> <label for="">ID</label></td>
+                <td> <input type="text" name="" id="id"></td>
+            </tr>
+            <tr>
+                <td> <label for="">Name</label></td>
+                <td> <input type="text" name="" id="name"></td>
+            </tr>
+            <tr>
+                <td> <label for="">Age</label></td>
+                <td> <input type="text" name="" id="age"> </td>
+            </tr>
+            <tr>
+                <td> <label for="">City</label></td>
+                <td> <input type="text" name="" id="city"> </td>
+            </tr>
+            <tr>
+                <td><label for="">Profession</label></td>
+                <td><input type="text" name="" id="profession"> </td>
+            </tr>
+            <tr>
+                <td> <label for="">Salary</label></td>
+                <td><input type="text" name="" id="salary"> </td>
+            </tr>
+            <tr>
+                <td><label for="">Is Active</label></td>
+                <td><input type="text" name="" id="isActive"> </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <button type="button" onclick="addUser()">Add User</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+
+    <table border="1" id="usersTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Profession</th>
+                <th>Salary</th>
+                <th>Is Active</th>
+            </tr>
+        </thead>
+        <tbody id="myUsers"></tbody>
+    </table>
+    <script>
+
+        var users = [
+            {
+                id: 1,
+                name: "Arun Kumar",
+                age: 24,
+                city: "Bangalore",
+                profession: "Frontend Developer",
+                salary: 55000,
+                isActive: true
+            },
+            {
+                id: 2,
+                name: "Sneha Reddy",
+                age: 27,
+                city: "Hyderabad",
+                profession: "UI Designer",
+                salary: 62000,
+                isActive: true
+            },
+            {
+                id: 3,
+                name: "Rahul Sharma",
+                age: 30,
+                city: "Mumbai",
+                profession: "Backend Developer",
+                salary: 75000,
+                isActive: false
+            },
+            {
+                id: 4,
+                name: "Priya Nair",
+                age: 26,
+                city: "Chennai",
+                profession: "QA Engineer",
+                salary: 50000,
+                isActive: true
+            },
+            {
+                id: 5,
+                name: "Kiran Patel",
+                age: 29,
+                city: "Pune",
+                profession: "DevOps Engineer",
+                salary: 80000,
+                isActive: false
+            },
+            {
+                id: 6,
+                name: "Meena Joshi",
+                age: 23,
+                city: "Delhi",
+                profession: "Content Writer",
+                salary: 40000,
+                isActive: true
+            }
+        ];
+
+        function displayUsers() {
+            document.querySelector("#myUsers").innerHTML = "";
+            for (i = 0; i < users.length; i++) {
+                var myTr = document.createElement("tr");
+                myTr.innerHTML = `
+            <td>${users[i].id}</td>
+            <td>${users[i].name}</td>
+            <td>${users[i].age}</td>
+            <td>${users[i].city}</td>
+            <td>${users[i].profession}</td>
+            <td>${users[i].salary}</td>
+            <td>${users[i].isActive}</td>
+            `
+
+                document.querySelector("#myUsers").appendChild(myTr)
+            }
+        }
+
+        displayUsers();
+
+        function addUser() {
+            var user = {};
+            user.id = document.getElementById("id").value;
+            user.name = document.getElementById("name").value;
+            user.age = document.getElementById("age").value;
+            user.city = document.getElementById("city").value;
+            user.profession = document.getElementById("profession").value;
+            user.salary = document.getElementById("salary").value;
+            user.isActive = document.getElementById("isActive").value;
+            users.push(user);
+            displayUsers();
+            clearForm();
+        }
+
+        function clearForm() {
+
+            document.getElementById("id").value = "";
+            document.getElementById("name").value = "";
+            document.getElementById("age").value = "";
+            document.getElementById("city").value = "";
+            document.getElementById("profession").value = "";
+            document.getElementById("salary").value = "";
+            document.getElementById("isActive").value = "";
+
+        }
+    </script>
+</body>
+
+</html>
