@@ -8,6 +8,9 @@
         table{
             width: 100%;
         }
+        #updateButton{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -19,7 +22,8 @@
         <label for="">Email :</label>
         <input type="text" name="" id="email"> <br>
 
-        <button type="button" onclick="createUser()">Add User</button>
+        <button type="button" onclick="createUser()" id="addButton">Add User</button>
+        <button type="button" onclick="updateUser()" id="updateButton">Update User</button>
     </form>
     <hr>
     <table border="1">

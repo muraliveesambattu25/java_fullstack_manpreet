@@ -1,14 +1,14 @@
 var allUsers = []
 
 function createUser() {
-
     var user = {
         fname: document.getElementById("fname").value,
         lname: document.getElementById("lname").value,
         email: document.getElementById("email").value
     }
     allUsers.push(user);
-    localStorage.setItem("storedUsers",JSON.stringify(allUsers))
+    // localStorage.setItem("storedUsers", JSON.stringify(allUsers)); 
+    // Send the Info to the Server 
     displayUsers();
     clearUser();
 }
