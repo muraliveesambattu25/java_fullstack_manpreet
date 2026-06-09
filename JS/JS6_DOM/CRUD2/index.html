@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table{
+        table {
             width: 100%;
         }
-        #updateButton{
+
+        #updateButton {
             display: none;
         }
+
     </style>
 </head>
+
 <body>
     <form>
         <label for="">First Name :</label>
-        <input type="text" name="" id="fname"> <br>
+        <input type="text" name="" id="fname" onkeyup="valdateInput()"> <span style="color: red;">First Name should be
+            Minimum 6 Characters !</span> <br>
         <label for="">Last Name : </label>
         <input type="text" name="" id="lname"> <br>
         <label for="">Email :</label>
-        <input type="text" name="" id="email"> <br>
+        <input type="text" name="" id="email" onkeyup="valdateInput()"> <br>
 
-        <button type="button" onclick="createUser()" id="addButton">Add User</button>
+        <button type="button" onclick="createUser()" id="addButton" disabled>Add User</button>
         <button type="button" onclick="updateUser()" id="updateButton">Update User</button>
     </form>
     <hr>
@@ -38,9 +43,16 @@
         </thead>
         <tbody></tbody>
     </table>
+
+    <ol>
+        <li> Show Confirmation Button for Delete </li>
+        <li> Add Validations for update</li>
+        <li>Show Validations errors for all Inputs </li>
+    </ol>
     <script src="create.js"></script>
     <script src="read.js"></script>
     <script src="update.js"></script>
     <script src="delete.js"></script>
 </body>
+
 </html>
