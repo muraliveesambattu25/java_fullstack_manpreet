@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "name": "Leanne Graham",
+      "email": "vmurali100@gmail.com",
+      "id": "7HYxP41zJ_4"
+    },
+    {
+      "name": "Demo-Murali",
+      "email": "vmurali1001@gmail.com",
+      "id": "g9jB7u2elu0"
+    },
+    {
+      "name": "demo-app",
+      "email": "vmurali102@gmail.com",
+      "id": "OkgVphmSTKI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
