@@ -14,6 +14,21 @@
       "name": "demo-app",
       "email": "vmurali102@gmail.com",
       "id": "OkgVphmSTKI"
+    },
+    {
+      "name": "Ram",
+      "email": "ram@gmail.com",
+      "id": "jpBLKpqlAfU"
+    },
+    {
+      "name": "krishna",
+      "email": "kriahna@gmail.com",
+      "id": "Eie65nOYWOE"
+    },
+    {
+      "name": "Leanne Graham",
+      "email": "vmurali100@gmail.com",
+      "id": "1lItkKywttk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
